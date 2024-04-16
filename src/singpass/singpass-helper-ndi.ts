@@ -104,7 +104,6 @@ export class NdiOidcHelper {
 	 * Use extractNricAndUuidFromPayload on the returned Token Payload to get the NRIC and UUID
 	 */
 	public async getIdTokenPayload(tokens: TokenResponse, overrideDecryptKey?: Key): Promise<TokenPayload> {
-		logger.log("BEGIN");
 		try {
 			const {
 				data: { jwks_uri },
